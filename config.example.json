@@ -1,0 +1,6 @@
+{
+  "date": ["2025-01-01", "2025-01-03"],
+  "soul_ids": ["user123"],
+  "scrape_type": ["Linkdin", "codechef"],
+  "OverRide": false
+}

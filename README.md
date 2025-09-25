@@ -1,3 +1,47 @@
+## Scraper Project
+
+Minimal scaffold for a pluggable scraping framework with a JSON file database.
+
+### Structure
+
+```
+scrape/
+  base_scrape.py
+  linkdin_scrape.py
+  codefed_scrope.py
+Database/
+  base_database.py
+  database.py
+scraper_manger.py
+main.py
+```
+
+### Config example
+
+```json
+{
+  "date": ["2025-01-01", "2025-01-03"],
+  "soul_ids": ["user123", "user456"],
+  "scrape_type": ["Linkdin", "codechef"],
+  "OverRide": false
+}
+```
+
+### Run
+
+```bash
+python main.py config.json --out data/data.json
+```
+
+Results are stored in a JSON file with keys `platform|soul_id|YYYY-MM-DD`.
+
+### Add a new scraper
+
+1. Create a new file in `scrape/` and subclass `BaseScraper`.
+2. Set `SCRAPER_KEY` to the value your config will use.
+3. Implement `scrape(date_range, soul_ids)` to return a list of `ScrapeTask`.
+4. Register the class in `create_default_manager()`.
+
 # Andrew NG Notes Collection
 
 **This is the first course of the deep learning specialization at [Coursera](https://www.coursera.org/specializations/deep-learning) which is moderated by [DeepLearning.ai](http://deeplearning.ai/). The course is taught by Andrew Ng.**
