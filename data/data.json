@@ -1,0 +1,38 @@
+{
+  "Linkdin|user123|2025-01-01": {
+    "profile": "user123",
+    "connections": 0,
+    "posts": 0,
+    "override": false
+  },
+  "Linkdin|user123|2025-01-02": {
+    "profile": "user123",
+    "connections": 0,
+    "posts": 0,
+    "override": false
+  },
+  "Linkdin|user123|2025-01-03": {
+    "profile": "user123",
+    "connections": 0,
+    "posts": 0,
+    "override": false
+  },
+  "codechef|user123|2025-01-01": {
+    "handle": "user123",
+    "rating": null,
+    "problems_solved": 0,
+    "override": false
+  },
+  "codechef|user123|2025-01-02": {
+    "handle": "user123",
+    "rating": null,
+    "problems_solved": 0,
+    "override": false
+  },
+  "codechef|user123|2025-01-03": {
+    "handle": "user123",
+    "rating": null,
+    "problems_solved": 0,
+    "override": false
+  }
+}
